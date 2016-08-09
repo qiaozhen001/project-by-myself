@@ -1,0 +1,395 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+
+ol,ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+i{
+	font-style: normal;
+}
+
+.clearfix:after{
+	clear: both;
+	content: '';
+	display: block;
+}
+
+body{
+	font:12px/1.5 Arial,Verdana,"\5b8b\4f53",sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: white;
+	
+}
+
+.sitetopbar-wrapper{
+	background: #F1F1F1;
+}
+
+.sitetopbar{
+		height: 30px;
+		line-height: 30px;
+		width: 1210px;
+		margin: 0 auto;
+}
+
+.location-wrapper{
+	position: relative;
+	display: inline-block;
+	cursor: default;
+}
+
+.location{
+		padding: 0 10px;
+		display: inline-block;
+		border-left: 1px solid transparent;
+	    border-right: 1px solid transparent;
+}
+
+.location-wrapper:hover .location{
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	background: white;
+}
+
+.location-wrapper:hover .i-arrow{
+	display: inline-block;
+	-webkit-transform: rotate(180deg);
+	   -moz-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
+	        transform: rotate(180deg);
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	-moz-transition: transform 0.2s, -moz-transform 0.2s;
+	-o-transition: transform 0.2s, -o-transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
+}
+
+.location-wrapper:hover:after{
+	content: '';
+	display: block;
+	position: absolute;
+	height: 1px;
+	background:white;
+	right: 1px;
+	left: 1px;
+}
+
+.locationPicker{
+	line-height: 24px;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	z-index: 11;
+
+}
+
+.locationPicker > ol{
+	width: 300px;
+	border: 1px solid blue;
+	background: white;
+	border: 1px solid #DDDDDD;
+	display: none;
+}
+
+.location-wrapper:hover .locationPicker > ol{
+	display: block;
+}
+
+.locationPicker > ol > li{
+		padding: 0 8px;
+		height: 24px;
+		
+		float: left;
+		margin: 5px 10px;
+		cursor: pointer;
+}
+
+.locationPicker > ol > li:hover{
+	background-color: #F4F4F4;
+	color: #C81623;
+	
+}
+
+.locationPicker > ol > li.selected{
+	background:#C81623;
+	color: white;
+}
+
+.links .split{
+	height: 15px;
+	width: 1px;
+	background: #ddd;
+	display:inline-block;
+	vertical-align: middle;
+	margin: 0 1px;
+}
+
+.sitetopbar .links{
+		float: right;
+}
+
+.sitetopbar .links > a{
+	padding:0 8px;
+}
+
+.sitetopbar .links > a:hover{
+	color: #C81623;
+}
+
+
+/*------logo-search-cart------*/
+.logo-search-cart{
+	width: 1210px;
+	margin: 0 auto;
+	padding: 20px 0 ;
+}
+
+.logo-search-cart > .logo,
+.logo-search-cart > .search,
+.logo-search-cart > .cart{
+	float: left;
+}
+
+.logo-search-cart >.logo > img{
+	vertical-align: middle;
+}
+
+.logo-search-cart > .search{
+	margin-left: 90px;
+	margin-top: 3px;
+}
+
+.logo-search-cart > .search input{
+	height: 34px;
+	border: 2px solid #861D1D;
+	width: 439px;
+	padding: 0 3px;
+	font: inherit;
+	box-sizing: border-box;
+
+}
+
+.logo-search-cart > .search input:focus{
+	outline: none;
+}
+.logo-search-cart > .search button{
+	height: 34px;
+	width: 78px;
+	background: #861D1D;
+	color: white;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	position: relative;
+	top: 1px;
+	cursor: pointer;
+}
+
+.logo-search-cart > .search .hot{
+	color: #C81623;
+}
+
+.logo-search-cart > .search a{
+	color: #666;
+	margin-right: 0.7em;
+}
+
+.cart{
+	margin-left: 100px;
+}
+
+.sitecart{
+	box-sizing: border-box;
+	padding: 0 36px;
+	height: 34px;
+	background: #f9f9f9;
+	border: 1px solid #E7E7E7;
+	color: #666;
+	font: inherit;
+	font-size: 12px;
+	position: relative;
+	top: 4px;
+	line-height: 32px;
+}
+
+.sitecart > i{
+    position: absolute;
+}
+
+.sitecart > i.prefix{
+	left: 10px;
+	
+}
+
+.sitecart > i.addon{
+	right: 14px;
+	top: 0px;
+}
+
+.sitecart > i.count{
+	top: -10px;
+	right: 20px;
+	font-size: 12px;
+	border-radius: 8px 8px 8px 0px;
+	background: #C81623;
+	height: 12px;
+	width: 16px;
+	line-height: 12px;
+	color: white;
+}
+
+
+.bizNav-wrapper{
+  border-bottom: 2px solid #B1191A;
+}
+.bizNav{
+  width: 1210px;
+  margin: 0 auto;
+  line-height: 44px;
+}
+.bizNav > .allProduct{
+  width: 182px;
+  height: 44px;
+  background: #B1191A;
+  padding: 0 10px;
+  font-size: 15px;
+  color: white;
+  float: left;
+}
+.bizNav > .allBiz{
+  display: inline-block;
+  color: #333;
+  font-size: 16px;
+  vertical-align: top;
+}
+.bizNav > .allBiz > a{
+  margin: 0 18px;
+}
+
+
+
+
+
+.composite{
+	margin: 0 auto;
+	width: 1210px;
+}
+
+.productCategory{
+  float: left;
+}
+.productCategory > ul{
+  width: 202px;
+  background: #C81623;
+  color: white;
+}
+
+.productCategory > ul.menu>li{
+  height: 31px;
+  line-height: 34px;
+  font-size: 14px;
+  padding-left: 9px;
+  position: relative;
+  border-left: 1px solid transparent;
+}
+
+.productCategory > ul.menu>li:after{
+  content:'\e602';
+  font-family: 'jd-icon';
+  position: absolute;
+  right: 5px;
+  font-size: 8px;
+}
+
+
+.productCategory > ul.menu>li:hover{
+  color: #C81623;
+  background: white;
+  
+}
+
+.productCategory > ul.menu>li:hover:after{
+  display: none;
+}
+.productCategory > ul.menu>li>ul.submenu{
+  display: block;
+  position: absolute;
+  top:0;
+  left: 100%;
+  background: green;
+  width: 700px;
+  border-top: 1px solid red;;
+}
+
+.submenu{
+	z-index: 11;
+}
+
+.productCategory>.submenu >li{
+ display: none;
+}
+.productCategory>.submenu >li.active{
+  display: block;
+}
+
+
+.productCategory{
+  position: relative;
+}
+.productCategory .submenu{
+  position: absolute;
+  left: 200px;
+  top: 0;
+  
+}
+.productCategory .submenu > li{
+  background: white;
+  border: 1px solid red;
+  width: 700px;
+  height: 464px;
+  color: black;
+}
+
+.artList{
+	float: left;
+    position: relative;
+    margin: 10px 10px;
+}
+.artList .slidesjs-pagination{
+  position: absolute;
+  bottom:10px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+}
+.artList .slidesjs-pagination > li{
+  
+  display: inline-block;
+  color: white;
+  text-align: center;
+  margin: 0 .2em;
+}
+.artList .slidesjs-pagination > li > a{
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  background: #3E3E3E;
+    border-radius: 50%;
+
+
+}
+.artList .slidesjs-pagination > li > a.active{
+  background: red;
+}

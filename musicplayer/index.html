@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1470244663_5822232.css">
+	<link rel="icon"  href="http://pic12.nipic.com/20110110/2889686_132800323324_2.jpg">
+	<title>音乐播放器</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	<ul class="list">
+		<li class="list-style" t-index=1>新歌榜</li>
+		<li t-index=2>热歌榜</li>
+		<li t-index=11>摇滚榜</li>
+		<li t-index=12>爵士</li>
+		<li t-index=16>流行</li>
+		<li t-index=21>欧美金曲榜</li>
+		<li t-index=22>经典老歌榜</li>
+		<li t-index=23>影视金曲榜</li>
+		<li t-index=24>网络歌曲榜</li>
+	</ul>
+	<audio autoplay></audio>
+	<div class="musicPlayer-wrapper">
+		<div class="musicplayer">
+	<!--顶部图片与歌词展示-->
+		<div class="top-wrapper">
+			<div  id="lyric" class="lyric show">
+				<ul id="lycul" ></ul>
+			</div>
+		</div>
+	<!--中部歌曲详情&歌曲分享&歌词按钮-->
+		<div class="m-wrapper">
+			<div class="detail">
+				<ul>
+					<li class="songsName"></li>
+					<li class="singer"></li>
+					<li class="musicStyle"></li>
+				</ul>
+			</div>
+			<div class="m-icon">
+				<a class="share iconfont icon-share" href="http://service.weibo.com/share/share.php?title=便捷播放器" title="分享"></a>
+				<span class="controlLyric iconfont icon-lyric" title="歌词"></span>
+			</div>
+		</div>
+	<!--底部进度条与控制器-->
+		<div class="footer-wrapper">
+			<div class="progress">
+				<div class="curr"></div>
+			</div>
+			<div class="control">
+				
+				<span class="controlplay iconfont icon-pause" title="暂停/播放"></span>
+					<!--<span class="iconfont icon-play"></span>-->
+				<span class="playnext iconfont icon-next" title="下一首"></span>
+				<span class="randomplay iconfont icon-random" title="随机/单曲"></span>
+					<!--<span class="iconfont icon-loop" title="单曲循环"></span>-->
+				
+		</div>
+
+	</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
