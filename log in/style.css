@@ -1,0 +1,207 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol{
+	list-style: none;
+}
+
+body{
+	background-color: #D2CBC5;
+}
+
+
+
+.site-wrapper{
+	text-align: center;
+	margin-top: 150px;
+}
+
+header > p{
+	font-size: 30px;
+	font-family:微软雅黑,sans-serif;
+	color: rgb(98,94,91);
+	font-weight: normal;
+}
+
+header > p > span{
+	font-size: 30px;
+	font-family: "Brush Script Std";
+}
+
+form{
+	background:#DAD3CD;
+	width: 260px;
+	height: 260px;
+	margin: 35px auto;
+	padding: 30px;
+	-webkit-box-shadow:0px 1px 2px 1px #aaaaaa,
+	           inset 0px 1px 1px rgba(255,255,255,0.7);
+	   -moz-box-shadow:0px 1px 2px 1px #aaaaaa,
+	           inset 0px 1px 1px rgba(255,255,255,0.7);
+	        box-shadow:0px 1px 2px 1px #aaaaaa,
+	           inset 0px 1px 1px rgba(255,255,255,0.7);
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+}
+
+form ul li.user,li.password,li.check,li.forget{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+ul li input:focus{
+	outline: none;
+	background: #f5f2ef;
+}
+
+.user > input{
+	padding-left: 25px;
+	width: 100%;
+	height: 100%;
+	border:none;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+	background: #e1dcd8;
+	color: rgb(98,94,91);
+	-webkit-box-shadow:inset 0px 1px 3px #aaaaaa;
+	   -moz-box-shadow:inset 0px 1px 3px #aaaaaa;
+	        box-shadow:inset 0px 1px 3px #aaaaaa;
+}
+
+li.user{
+	position: relative;
+}
+.user span{
+	color: #aaaaaa;
+	position: absolute;
+	left: 0;
+	height: 40px;
+	line-height: 40px;
+	width: 20px;
+}
+
+.password{
+	position: relative;
+}
+
+
+
+.password span{
+	color: #aaaaaa;
+	position: absolute;
+	left: 0;
+	height: 40px;
+	line-height: 40px;
+	width: 20px;
+}
+
+.password > input{
+	padding-left: 25px;
+	width: 100%;
+	height: 100%;
+	border:none;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	background: #e1dcd8;
+	color: rgb(98,94,91);
+	-webkit-box-shadow:inset 0px 2px 5px #aaaaaa;
+	   -moz-box-shadow:inset 0px 2px 5px #aaaaaa;
+	        box-shadow:inset 0px 2px 5px #aaaaaa;
+}
+
+.forget,.check{
+	text-align: left;
+}
+
+li.check{
+	position: relative;
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: bold;
+	font-family: 微软雅黑,sans-serif;
+	color: rgb(98,94,91);
+	margin-bottom: 10px;
+}
+
+li.check input{
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+}
+
+label{
+	cursor: pointer;
+}
+
+
+
+input[type=checkbox] + label{
+	color: white;
+}
+
+input[type=checkbox]:checked + label{
+	color: black;
+}
+
+
+
+
+
+.forget{
+	font-size: 14px;
+	font-family: 黑体,sans-serif;
+	color: #aaaaaa;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.button input{
+    width: 100%;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+     background: -webkit-linear-gradient(top,#94aa64 0%, #7a924a 50%, #607738);
+     background: -moz-linear-gradient(top,#94aa64 0%, #7a924a 50%, #607738);
+     background: linear-gradient(top,#94aa64 0%, #7a924a 50%, #607738);
+}
+
+.button input:hover{
+	opacity: 0.8;
+}
+
+.button input:active{
+	 background: -webkit-linear-gradient(top,#94aa64 0%, #7a924a 50%, #607738);
+     background: -moz-linear-gradient(top,#94aa64 0%, #7a924a 50%, #607738);
+     background: linear-gradient(top,#94aa64 0%, #7a924a 50%, #607738);
+}
+
+footer p{
+	font-size: 12px;
+	font-family: 黑体;
+	color: rgb(98,94,91);
+}
+footer a{
+	color: rgb(152,142,135);
+	line-height: 14px;
+}
+
+.split{
+	display: inline-block;
+	height: 13px;
+	width: 1px;
+	background-color: #aaaaaa;
+	vertical-align: middle;
+	border: none;
+}
